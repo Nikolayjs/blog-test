@@ -1,0 +1,23 @@
+.badge {
+  height: 100%;
+}
+
+.badge-content {
+  font-size: 1rem;
+  --si-badge-padding-x: 0.6em;
+  --si-badge-padding-y: 0.35em;
+  --si-badge-font-size: 0.8125em;
+  --si-badge-font-weight: 600;
+  --si-badge-color: #fff;
+  --si-badge-border-radius: 0.25rem;
+  display: inline-block;
+  padding: var(--si-badge-padding-y) var(--si-badge-padding-x);
+  font-size: var(--si-badge-font-size);
+  font-weight: var(--si-badge-font-weight);
+  line-height: 1;
+  color: var(--si-badge-color);
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: var(--si-badge-border-radius);
+}

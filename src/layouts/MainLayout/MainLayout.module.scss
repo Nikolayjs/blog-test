@@ -1,0 +1,17 @@
+.page-wrapper {
+  z-index: 2;
+  min-height: 100vh;
+  flex: 1 0 auto;
+  position: relative;
+}
+
+.footer {
+  flex-shrink: 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+}

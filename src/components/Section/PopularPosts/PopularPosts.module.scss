@@ -1,0 +1,43 @@
+h2 {
+  font-size: calc(1.375rem + 1.5vw);
+  font-weight: 800;
+}
+.popular-posts {
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  background-color: var(--bg-color);
+}
+
+.swiper {
+  max-width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.popular-posts-list {
+  position: relative;
+  display: flex;
+  min-height: 10vh;
+  width: 100%;
+  padding-bottom: 5rem;
+}

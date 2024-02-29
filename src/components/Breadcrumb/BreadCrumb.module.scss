@@ -1,0 +1,38 @@
+.breadcrumb {
+  margin-top: 1rem;
+  padding-top: 1.5rem;
+  display: flex;
+  justify-self: self-start;
+  > ol {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0;
+    gap: 0.5rem;
+    > .breadcrumb-item {
+      display: flex;
+      align-items: center;
+
+      font-size: 1rem;
+      font-weight: 500;
+
+      &:last-child {
+        &::after {
+          content: '';
+          cursor: default;
+        }
+      }
+      > a {
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        color: var(--gray-600);
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+        &:hover {
+          color: var(--text-color) !important;
+        }
+      }
+    }
+  }
+}

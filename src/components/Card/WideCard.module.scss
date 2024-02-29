@@ -1,0 +1,112 @@
+article {
+  background-color: var(--bg-card);
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0.275rem 0.75rem -0.0625rem rgba(11, 15, 25, 0.06),
+    0 0.125rem 0.4rem -0.0625rem rgba(11, 15, 25, 0.03) !important;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-clip: border-box;
+  border-radius: 0.5rem;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-col {
+  display: flex;
+  flex-direction: row;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+.card-img {
+  background-image: url(type_script_logo.png);
+  min-height: 15rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  flex: 0 0 auto;
+  width: 33.33333333%;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+  flex-shrink: 0;
+}
+
+.card-body {
+  flex: 0 0 auto;
+  width: 66.66666667%;
+  @media screen and (max-width: 768px) {
+    width: 97%;
+  }
+  flex-shrink: 0;
+}
+
+.card-body-container {
+  flex: 1 1 auto;
+  padding: 1rem 1.5rem;
+  > h3 {
+    font-size: 1.5rem;
+    > a {
+      text-decoration: none;
+      color: var(--text-color);
+      &:hover {
+        color: var(--primary);
+        transition: all 0.2s ease-in-out;
+      }
+    }
+  }
+}
+
+.card-info {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center !important;
+  gap: 1rem;
+  word-wrap: break-word !important;
+  font-weight: 500;
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+  }
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 1.5rem;
+  padding-bottom: 1rem;
+  > a {
+    text-decoration: none !important;
+    font-weight: 800 !important;
+    margin-right: 1rem rem !important;
+    display: flex !important;
+    align-items: center !important;
+    transition: color 0.2s ease-in-out;
+    > img {
+      max-width: 100%;
+      height: auto;
+      vertical-align: middle;
+      border-radius: 50% !important;
+      margin-right: 1rem !important;
+    }
+  }
+}
+
+.divider {
+  width: 1px;
+  min-height: 25px;
+  max-height: 100px;
+  background-color: var(--gray-400);
+  margin: 0 1rem;
+}
+
+.badge {
+  text-decoration: none;
+  color: inherit;
+}

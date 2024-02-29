@@ -1,0 +1,45 @@
+.card {
+  align-self: flex-start;
+  padding: 1.125rem 1.5rem;
+  background-color: var(--bg-card);
+  @media screen and (max-width: 992px) {
+    gap: 5%;
+    max-width: 95%;
+  }
+  box-shadow: 0 0.275rem 0.75rem -0.0625rem rgba(11, 15, 25, 0.06),
+    0 0.125rem 0.4rem -0.0625rem rgba(11, 15, 25, 0.03);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  word-wrap: break-word;
+  background-clip: border-box;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  &:hover {
+    background-color: #6366f1;
+    -webkit-box-shadow: 0px 15px 40px -20px rgba(99, 102, 241, 0.4);
+    -moz-box-shadow: 0px 15px 40px -20px rgba(99, 102, 241, 0.4);
+    box-shadow: 0px 15px 40px -20px rgba(99, 102, 241, 0.4);
+    color: white;
+    transition: transform 0.2s ease-in-out, border-color 0.2s ease-in-out,
+      background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.card-footer {
+  width: calc(100% - 1.5rem * 2);
+  margin: auto;
+  padding-bottom: 2rem !important;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.card-title {
+  font-size: 1.8rem;
+}

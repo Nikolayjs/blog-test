@@ -1,0 +1,32 @@
+:root {
+  --si-btn-hover-color: #fff;
+  --si-btn-active-color: #fff;
+  --si-btn-hover-bg: #4044ee;
+  --si-btn-active-bg: #4044ee;
+  --si-btn-hover-border-color: #4044ee;
+  --si-btn-active-border-color: #4044ee;
+  --si-btn-disabled-color: #fff;
+}
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary);
+  border-radius: 0.5rem;
+  border: none;
+  padding: 0.785rem 2rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-weight: 600;
+  line-height: 1.6rem;
+  font-size: 1rem;
+  -webkit-box-shadow: 0px 15px 40px -20px rgba(99, 102, 241, 0.4);
+  -moz-box-shadow: 0px 15px 40px -20px rgba(99, 102, 241, 0.4);
+  box-shadow: 0px 15px 40px -20px rgba(99, 102, 241, 0.4);
+  &:hover {
+    filter: brightness(0.9);
+  }
+  &:active {
+    filter: contrast(0.9);
+  }
+}

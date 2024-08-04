@@ -1,13 +1,11 @@
 {
-  "name": "Niko",
-  "lastName": "Smakovsky",
-  "age": "32",
-  "sex": "Yes"
-},
-{
-  "name": "Niko",
-  "lastName": "Smakovsky",
-  "age": "32",
-  "sex": "Yes"
-},
-
+  "posts": [
+    {
+      "id": 1,
+      "title": "hello"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
